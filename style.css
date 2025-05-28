@@ -145,12 +145,7 @@ nav {
   transition: var(--transition);
 }
 
-nav.scrolled {
-  background: rgba(25, 18, 39, 0.9);
-  backdrop-filter: blur(10px);
-  padding: 15px 0;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-}
+
 
 .nav-container {
   display: flex;
@@ -169,6 +164,7 @@ nav.scrolled {
 .links {
   display: flex;
   gap: 2rem;
+  margin-left: auto;
 }
 
 .nav-link {
@@ -198,13 +194,12 @@ nav.scrolled {
 .nav-link.active {
   color: var(--primary-color);
 }
+.hamburg {
+  display: none;
+}
 
 .hamburg, .cancel {
-  color: var(--primary-color);
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none;
-  transition: var(--transition);
+  display: block;
 }
 
 .hamburg:hover, .cancel:hover {
@@ -257,7 +252,7 @@ nav.scrolled {
   display: flex;
   align-items: center;
   position: relative;
-  padding-top: 80px;
+  padding: 120px 0 80px; 
   overflow: hidden;
 }
 
@@ -267,6 +262,7 @@ nav.scrolled {
   justify-content: space-between;
   gap: 3rem;
   width: 100%;
+  min-height: calc(100vh - 200px);
 }
 
 .image {
@@ -414,8 +410,14 @@ nav.scrolled {
 
 .intro-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .intro-content {
+    grid-template-columns: 1fr;
+  }
 }
 
 .intro-card {
@@ -1115,7 +1117,7 @@ footer {
   }
   
   .hamburg {
-    display: block;
+    display: none;
   }
   
   .projects-grid {
