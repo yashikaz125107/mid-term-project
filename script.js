@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Scroll to top button
     const scrollTopBtn = document.getElementById('scrollTop');
     window.addEventListener('scroll', function() {
+        console.log("hi0");
         if (window.scrollY > 300) {
             scrollTopBtn.style.opacity = '1';
             scrollTopBtn.style.pointerEvents = 'auto';
@@ -86,10 +87,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-document.addEventListener('DOMContentLoaded', function() {
+
+// document.addEventListener('DOMContentLoaded', function() {
+    console.log("hi1");
     const skillCategories = document.querySelectorAll('.skill-category');
     const skillsToolsSections = document.querySelectorAll('.skills-tools');
-
+    console.log(skillCategories);
+    console.log(skillsToolsSections);
+    console.log("hi2");
     skillCategories.forEach(category => {
         category.addEventListener('click', function() {
             // 1. Remove active class from all categories
@@ -117,7 +122,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (skillCategories.length > 0 && !document.querySelector('.skill-category.active')) {
         skillCategories[0].click();
     }
-});
+// });
+
 
     // Animate stats counting
     const statNumbers = document.querySelectorAll('.stat-number');
