@@ -86,21 +86,38 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Skills category switching
+document.addEventListener('DOMContentLoaded', function() {
     const skillCategories = document.querySelectorAll('.skill-category');
+    const skillsToolsSections = document.querySelectorAll('.skills-tools');
+
     skillCategories.forEach(category => {
         category.addEventListener('click', function() {
-            // Remove active class from all categories
-            skillCategories.forEach(cat => cat.classList.remove('active'));
+            // 1. Remove active class from all categories
+            skillCategories.forEach(cat => {
+                cat.classList.remove('active');
+            });
             
-            // Add active class to clicked category
+            // 2. Add active class to clicked category
             this.classList.add('active');
             
-            // Here you would typically show/hide different skill sets
-            // For now we'll just log the category
-            console.log('Selected category:', this.dataset.category);
+            // 3. Get the corresponding tools section ID
+            const categoryToShow = this.getAttribute('data-category') + '-tools';
+            
+            // 4. Hide all tools sections
+            skillsToolsSections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // 5. Show the selected section
+            document.getElementById(categoryToShow).classList.add('active');
         });
     });
+
+    // Activate first category by default
+    if (skillCategories.length > 0 && !document.querySelector('.skill-category.active')) {
+        skillCategories[0].click();
+    }
+});
 
     // Animate stats counting
     const statNumbers = document.querySelectorAll('.stat-number');

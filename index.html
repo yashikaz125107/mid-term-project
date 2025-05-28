@@ -187,63 +187,101 @@
     </div>
   </section>
 
-  <!-- Skills/Tools Section -->
-  <section id="skills" class="skills-section">
-    <div class="section-container">
-      <h1 class="section-title" data-aos="fade-up">My <span>Skills</span> & Tools</h1>
+<!-- Skills/Tools Section -->
+<section id="skills" class="skills-section">
+  <div class="section-container">
+    <h1 class="section-title">My <span>Skills</span> & Tools</h1>
+    
+    <div class="skills-container">
+      <div class="skills-categories">
+        <div class="skill-category active" data-category="security">
+          <i class="fas fa-shield-alt"></i>
+          <span>Security</span>
+        </div>
+        <div class="skill-category" data-category="networking">
+          <i class="fas fa-network-wired"></i>
+          <span>Networking</span>
+        </div>
+        <div class="skill-category" data-category="forensics">
+          <i class="fas fa-search"></i>
+          <span>Forensics</span>
+        </div>
+        <div class="skill-category" data-category="programming">
+          <i class="fas fa-code"></i>
+          <span>Programming</span>
+        </div>
+      </div>
       
-      <div class="skills-container">
-        <div class="skills-categories" data-aos="fade-right">
-          <div class="skill-category active" data-category="security">
-            <i class="fas fa-shield-alt"></i>
-            <span>Security</span>
-          </div>
-          <div class="skill-category" data-category="networking">
-            <i class="fas fa-network-wired"></i>
-            <span>Networking</span>
-          </div>
-          <div class="skill-category" data-category="forensics">
-            <i class="fas fa-search"></i>
-            <span>Forensics</span>
-          </div>
-          <div class="skill-category" data-category="programming">
-            <i class="fas fa-code"></i>
-            <span>Programming</span>
+      <div class="skills-content">
+        <!-- Security Tools (shown by default) -->
+        <div class="skills-tools active" id="security-tools">
+          <div class="tools-grid">
+            <div class="tool-item" data-tooltip="Wireshark">
+              <img src="https://cdn.simpleicons.org/wireshark/white" alt="Wireshark">
+            </div>
+            <div class="tool-item" data-tooltip="Metasploit">
+              <img src="https://cdn.simpleicons.org/metasploit/white" alt="Metasploit">
+            </div>
+            <div class="tool-item" data-tooltip="Burp Suite">
+              <img src="https://cdn.simpleicons.org/burpsuite/white" alt="Burp Suite">
+            </div>
+            <div class="tool-item" data-tooltip="Kali Linux">
+              <img src="https://cdn.simpleicons.org/kalilinux/white" alt="Kali Linux">
+            </div>
+            <div class="tool-item" data-tooltip="Nmap">
+              <img src="https://cdn.simpleicons.org/nmap/white" alt="Nmap">
+            </div>
           </div>
         </div>
         
-        <div class="skills-content" data-aos="fade-left">
-          <div class="skills-grid" id="security-skills">
-            <div class="skill-item">
-              <div class="skill-icon">
-                <img src="https://cdn.simpleicons.org/kalilinux/white" alt="Kali Linux">
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">Kali Linux</span>
-                <div class="skill-bar">
-                  <div class="skill-level" style="width: 90%"></div>
-                </div>
-              </div>
+        <!-- Networking Tools -->
+        <div class="skills-tools" id="networking-tools">
+          <div class="tools-grid">
+            <div class="tool-item" data-tooltip="Wireshark">
+              <img src="https://cdn.simpleicons.org/wireshark/white" alt="Wireshark">
             </div>
-            <!-- More security skills here -->
+            <div class="tool-item" data-tooltip="Nmap">
+              <img src="https://cdn.simpleicons.org/nmap/white" alt="Nmap">
+            </div>
+            <div class="tool-item" data-tooltip="VMware">
+              <img src="https://cdn.simpleicons.org/vmware/white" alt="VMware">
+            </div>
           </div>
-          
-          <div class="tools-showcase">
-            <h3>Tools I Use</h3>
-            <div class="tools-grid">
-              <div class="tool-item" data-tooltip="Wireshark">
-                <img src="https://cdn.simpleicons.org/wireshark/white" alt="Wireshark">
-              </div>
-              <div class="tool-item" data-tooltip="Metasploit">
-                <img src="https://cdn.simpleicons.org/metasploit/white" alt="Metasploit">
-              </div>
-              <!-- More tools here -->
+        </div>
+        
+        <!-- Forensics Tools -->
+        <div class="skills-tools" id="forensics-tools">
+          <div class="tools-grid">
+            <div class="tool-item" data-tooltip="Wireshark">
+              <img src="https://cdn.simpleicons.org/wireshark/white" alt="Wireshark">
+            </div>
+            <div class="tool-item" data-tooltip="Kali Linux">
+              <img src="https://cdn.simpleicons.org/kalilinux/white" alt="Kali Linux">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Programming Tools -->
+        <div class="skills-tools" id="programming-tools">
+          <div class="tools-grid">
+            <div class="tool-item" data-tooltip="VS Code">
+              <img src="https://cdn.simpleicons.org/visualstudiocode/white" alt="VS Code">
+            </div>
+            <div class="tool-item" data-tooltip="GitHub">
+              <img src="https://cdn.simpleicons.org/github/white" alt="GitHub">
+            </div>
+            <div class="tool-item" data-tooltip="Python">
+              <img src="https://cdn.simpleicons.org/python/white" alt="Python">
+            </div>
+            <div class="tool-item" data-tooltip="Windows Terminal">
+              <img src="https://cdn.simpleicons.org/windowsterminal/white" alt="Windows Terminal">
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Projects Section -->
   <section id="projects" class="projects-section">
