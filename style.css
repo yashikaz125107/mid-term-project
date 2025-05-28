@@ -195,13 +195,19 @@ nav {
   color: var(--primary-color);
 }
 .hamburg {
-  display: none;
+  display: none; /* Hidden by default */
 }
 
-.hamburg, .cancel {
-  display: block;
+/* Show hamburger only on mobile */
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+  
+  .hamburg {
+    display: block;
+  }
 }
-
 .hamburg:hover, .cancel:hover {
   transform: scale(1.1);
 }
@@ -1115,11 +1121,6 @@ footer {
   .links {
     display: none;
   }
-  
-  .hamburg {
-    display: none;
-  }
-  
   .projects-grid {
     grid-template-columns: 1fr;
   }
